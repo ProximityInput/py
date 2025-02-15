@@ -1,18 +1,15 @@
+import os
 import discord
 from discord.ext import commands
 from discord import app_commands
 import aiohttp
 import base64
-import os
-from dotenv import load_dotenv
 
 # Load environment variables
-load_dotenv()
 TOKEN = os.getenv("DISCORD_TOKEN")
-GITHUB_TOKEN = os.getenv("G_GITHUB_TOKEN")
-GITHUB_REPO = os.getenv("G_GITHUB_REPO")
-GUILD_ID = int(os.getenv("GUILD_ID"))  # Convert to integer
-REQUIRED_ROLE_ID = 1338832718888173578  # Replace with your role ID
+GITHUB_TOKEN = os.getenv("G_GITHUB_TOKEN")  # Corrected to match secrets
+GITHUB_REPO = os.getenv("G_GITHUB_REPO")    # Corrected to match secrets
+GUILD_ID = int(os.getenv("GUILD_ID"))  # Ensure it's an integer Replace with your role ID
 
 # Initialize bot with command tree
 intents = discord.Intents.default()
