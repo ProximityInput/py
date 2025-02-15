@@ -9,8 +9,8 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 TOKEN = os.getenv("DISCORD_TOKEN")
-GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
-GITHUB_REPO = os.getenv("GITHUB_REPO")
+GITHUB_TOKEN = os.getenv("G_GITHUB_TOKEN")
+GITHUB_REPO = os.getenv("G_GITHUB_REPO")
 GUILD_ID = int(os.getenv("GUILD_ID"))  # Convert to integer
 REQUIRED_ROLE_ID = 1338832718888173578  # Replace with your role ID
 
